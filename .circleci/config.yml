@@ -2,6 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: ansible/ansible
+      - image: ansible/centos7-ansible
     steps:
-      - run: uname -a
+      - run:
+        command: uname -a
