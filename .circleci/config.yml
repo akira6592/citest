@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run:
           name: Update npm
-          command: 'ansible-playbook test.yml --syntax-check'
+          command: 'ansible-playbook -i localhost, test.yml --syntax-check'
