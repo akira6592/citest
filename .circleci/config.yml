@@ -2,9 +2,9 @@ version: 2
 jobs:
   build:
     docker:
-      - image: ansible/centos7-ansible
+      - image: akira6592/ansibl
     steps:
       - checkout
       - run:
-          name: Update npm
-          command: 'ansible-playbook -i localhost, test.yml --syntax-check'
+          name: test
+          command: 'ansible --version'
