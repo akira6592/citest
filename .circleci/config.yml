@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: akira6592/ansibl
+      - image: akira6592/ansible
     steps:
       - checkout
       - run:
