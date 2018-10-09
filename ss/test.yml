@@ -1,0 +1,12 @@
+- hosts: ios
+  gather_facts: no
+
+
+  tasks:
+    - debug:
+        msg: "{{ ansible_connection }}"
+
+    - name: command test 
+      ios_command:
+        commands:
+          - show run
