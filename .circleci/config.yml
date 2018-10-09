@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: ansible/centos7-ansible
+      - image: ansible/ansible:centos7
     steps:
       - checkout
       - run:
