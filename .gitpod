@@ -1,1 +1,1 @@
-image: akira6592:ansible
+image: ansible/centos7-ansible
