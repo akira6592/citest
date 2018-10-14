@@ -2,4 +2,4 @@ tasks:
   - command: "pip install ansible jupyter ansible-kernel"
 ports:
   - port: 8888
-    protocol: 8888
+    protocol: "http"
