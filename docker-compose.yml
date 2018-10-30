@@ -24,8 +24,6 @@ services:
       - '--web.console.templates=/usr/share/prometheus/consoles'
     ports:
       - 9090:9090
-    depends_on:
-      - cadvisor
     networks:
       - back-tier
     restart: always
