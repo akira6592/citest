@@ -1,13 +1,7 @@
 version: '3.1'
 
-networks:
-  back-tier:
-
 services:
-
   batfish:
     image: batfish/allinone
     ports:
       - 8888:8888
-    networks:
-      - back-tier
