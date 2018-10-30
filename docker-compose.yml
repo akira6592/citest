@@ -5,3 +5,8 @@ services:
     image: batfish/allinone
     ports:
       - 8888:8888
+    restart: always
+    deploy:
+      placement:
+        constraints:
+          - node.hostname == ${HOSTNAME}
