@@ -5,7 +5,7 @@ networks:
 
 services:
 
-  prometheus:
+  batfish:
     image: batfish/allinone
     ports:
       - 8888:8888
