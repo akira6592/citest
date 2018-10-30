@@ -13,9 +13,19 @@ networks:
 services:
 
   prometheus:
-    image: batfish/allinone
+    image: prom/prometheus:v2.0.0
+    volumes:
+      - prometheus_config_data:/etc/prometheus/
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
     ports:
-      - 8888:8888
+      - 9090:9090
+    depends_on:
+      - cadvisor
     networks:
       - back-tier
     restart: always
