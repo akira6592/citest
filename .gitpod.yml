@@ -1,1 +1,1 @@
-image: node:alpine
+image: ansible/centos7-ansible
