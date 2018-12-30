@@ -1,1 +1,1 @@
-image: centos:centos7
+image: python:3.7
